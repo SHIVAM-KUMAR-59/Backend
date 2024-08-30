@@ -12,9 +12,20 @@ Some Basic Staus Code Ranges
 
 const http = require("http");
 const fs = require("fs");
+const _ = require('lodash');
 
 // Creating the server
 const server = http.createServer((req, res) => {
+
+  // Lodash
+  const num = _.random(0, 20);
+  console.log(num);
+
+  const greet = _.once(() =>{
+    console.log("Hello");
+  });
+  greet();
+  greet();
   // Corrected the writeHead call
   res.writeHead(200, { "Content-Type": "text/html" });
 
