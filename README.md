@@ -2,7 +2,7 @@
 
 <p id="description">The Backend repository is a collection of projects and exercises completed during my journey to master backend development with Node.js. This repository serves as a reference point for my learning process and includes various implementations of backend functionalities using Node.js Express.js MongoDB and other related technologies.</p>
 
-🛠️<h2> What You'll Find</h2>
+<h2>🛠️ What You'll Find</h2>
 In this repository, you'll find:
 <ul>
 <li><b>Code Examples:</b> Various backend development code snippets and examples covering fundamental concepts.</li>
@@ -10,7 +10,7 @@ In this repository, you'll find:
 <li><b>Learning Notes:</b> Comments and documentation within the code that explain the logic and important points I learned.</li>
 </ul>
 
-📚 <h2>Learning Path</h2>
+<h2>📚 Learning Path</h2>
 This repository reflects my journey as I delve into backend development. It includes everything from setting up a basic Node.js server to handling complex API routes and integrating databases.
 
 <h2>🛠️ Installation Steps:</h2>
