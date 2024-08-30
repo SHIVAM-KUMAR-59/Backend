@@ -46,15 +46,16 @@ npm start
 Technologies used in the project:
 
 *   NodeJs
-*   MongoDb
 *   ExpressJs
+*   MongoDb
+*   Mongoose
 
-🎯 <h2>Goals</h2>
+<h2>🎯 Goals</h2>
 <ul>
 <li>To understand the core concepts of backend development.</li>
-<li>To build a solid foundation in Node.js, Express.js, and MongoDB.<li>
+<li>To build a solid foundation in Node.js, Express.js, and MongoDB.</li>
 <li>To document and share my learning journey with others.</li>
 </ul>
 
-🤝 <h2>Contributions</h2>
+<h2>🤝 Contributions</h2>
 As this repository is primarily for personal learning, contributions are currently not being accepted. However, if you have suggestions or resources that could aid in my learning, feel free to open an issue or reach out.
