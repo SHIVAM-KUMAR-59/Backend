@@ -7,14 +7,16 @@ app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
 
+const indexFilePath = 'C:\\Users\\KIIT0001\\Desktop\\Backend\\Backend\\Server\\Files\\index.html';
 app.get("/", (req, res) => {
   // res.send('<h2>This is the home page</h2>');
-  res.sendFile("./Server/Files/index.html", { root: __dirname });
+  res.sendFile( `${indexFilePath}`);
 });
 
+const aboutFilePath = 'C:\\Users\\KIIT0001\\Desktop\\Backend\\Backend\\Server\\Files\\about.html';
 app.get("/about", (req, res) => {
   // res.send('<h2>This is the about page</h2>');
-  res.sendFile("./Server/Files/about.html", { root: __dirname });
+  res.sendFile(`${aboutFilePath}`);
 });
 
 // Redirecting
