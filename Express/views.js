@@ -11,7 +11,12 @@ app.listen(3000, () => {
 });
 
 app.get("/", (req, res) => {
-  res.render("index", { title: "Home" });
+  const blogs = [
+    { title: "Yoshi Finds eggs", snippet: "lorem ipsum rand kaldor zane" },
+    { title: "Mario Finds stars", snippet: "lorem ipsum rand kaldor zane" },
+    { title: "Yamat Kudasai ahh", snippet: "lorem ipsum rand kaldor zane" },
+  ];
+  res.render("index", { title: "Home", blogs });
 });
 
 app.get("/about", (req, res) => {
