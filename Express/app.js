@@ -2,18 +2,23 @@
 const express = require("express");
 const app = express();
 
+// Register View Engine, I have used EJS here, you can installit by typing 'npm i ejs'
+app.set("view engine", "ejs");
+
 // Listen for request
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
 
-const indexFilePath = 'C:\\Users\\KIIT0001\\Desktop\\Backend\\Backend\\Server\\Files\\index.html';
+const indexFilePath =
+  "C:\\Users\\KIIT0001\\Desktop\\Backend\\Backend\\Server\\Files\\index.html";
 app.get("/", (req, res) => {
   // res.send('<h2>This is the home page</h2>');
-  res.sendFile( `${indexFilePath}`);
+  res.sendFile(`${indexFilePath}`);
 });
 
-const aboutFilePath = 'C:\\Users\\KIIT0001\\Desktop\\Backend\\Backend\\Server\\Files\\about.html';
+const aboutFilePath =
+  "C:\\Users\\KIIT0001\\Desktop\\Backend\\Backend\\Server\\Files\\about.html";
 app.get("/about", (req, res) => {
   // res.send('<h2>This is the about page</h2>');
   res.sendFile(`${aboutFilePath}`);
