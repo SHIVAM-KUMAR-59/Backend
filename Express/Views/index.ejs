@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Backend Dev | <%= title %></title>
-  </head>
+  <!-- Importing the Head from Partials/head.ejs -->
+  <%- include('./Partials/head.ejs') %>
+
   <body>
-    <nav>
-      <div class="site-title">
-        <a href="/"><h1>Blog Engine</h1></a>
-        <p>A Backend Practice Site</p>
-      </div>
-      <ul>
-        <li><a href="/">Blogs</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blogs/create">New Blogs</a></li>
-      </ul>
-    </nav>
+    <!-- Importing the navbar from Partials/nav.ejs -->
+    <%- include('./Partials/nav.ejs') %>
+
     <div class="blogs content">
       <h2>All Blogs</h2>
 
@@ -27,5 +17,8 @@
       <p>There are no blogs to display</p>
       <%}%>
     </div>
+
+    <!-- Importing the footer from Partials/footer.ejs -->
+    <%- include('./Partials/footer.ejs') %>
   </body>
 </html>
