@@ -1,6 +1,6 @@
 // This file is an extension of 'view.js'
 
-// Importing express and creating an instance of express
+// Importing express along with mongoose and creating an instance of express
 const express = require("express");
 const app = express();
 
@@ -13,7 +13,7 @@ app.listen(3000, () => {
 });
 
 // Middleware
-  /*
+/*
    next() is a function that allows the middleware to move out from this function and move onto the next because Express does not automatically knows when to move on and just hangs your browser if the 'next()' is not present
   */
 app.use((req, res, next) => {
@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 });
 
 // Static Files
-app.use(express.static('Public'));
+app.use(express.static("Public"));
 
 app.get("/", (req, res) => {
   const blogs = [
